@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose number</title>
+</head>
+<style>
+    body {
+        background-color: rgb(53, 149, 238);
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    #head {
+        padding-top: 15%;
+        color: brown;
+        font-size: 4em;
+        font-family: cursive;
+    }
+
+    .btn {
+
+        font-weight: bold;
+        font-family: monospace;
+        margin-right: 20px;
+        font-siZe: 2em;
+    }
+</style>
+
+<body>
+    <h1 id='head'>Welcome! to my Game.. 😎😎</h1>
+    <button class='btn' onclick="startTimer()">Start</button>
+    <button class='btn' onclick="stopTimer()">Stop</button>
+    <button class='btn' onclick="">see magic 👈</button>
+
+    <br /><br /><br />
+
+
+
+    <script>
+
+        function startTimer() {
+            head.innerHTML = 'loading..';
+            let num=0
+            
+            refId = setInterval(function () {
+                head.innerHTML = `<h5>guess! which is your lucky  number (from 1 to 20)? 🤗Is it ${num} ✌️</h5>`;
+                num++;
+            }, 1000)
+        }
+        function stopTimer() {
+            clearInterval(refId);
+            let hy=setTimeout(magic,5000);
+
+            function magic() {
+            n = prompt('enter the correct number you choose: & see magic!', '')
+            if (n == 1) {
+                document.getElementById("head").innerHTML = '<h2>dear! In future..you will truly  become billionaire.. 😍😍         Thanks for play!<h2>';
+            }
+            if (n == 2) {
+                document.getElementById("head").innerHTML = '<h2> your parent will really appreciate everything that you do! 😍😍          Thanks for play!<h2>';
+            }
+            if (n == 3) {
+                document.getElementById("head").innerHTML = '<h2>you will become famous celebrity! 😍😍       Thanks for play!<h2>';
+            }
+            if (n == 4) {
+                document.getElementById("hed").innerHTML = '<h2>your marriage will be coming soon! 😍😍        Thanks for play!<h2>';
+            }
+            if (n > 4 && n <= 6) {
+                document.getElementById("head").innerHTML = '<h2>you will get a celebrity as your life partner! 😍😍       Thanks for play!<h2>';
+            }
+            if (n > 6 && n <= 10) {
+                document.getElementById("head").innerHTML = '<h2>you will get your first-job soon! 😍😍          Thanks for play!<h2>';
+            }
+            if (n > 10 && n <= 13) {
+                document.getElementById("head").innerHTML = '<h2>one day! whole world will proud on you.. 😍😍        Thanks for play!<h2>';
+            }
+            if (n > 13 && n <= 15) {
+                document.getElementById("head").innerHTML = '<h2>you will become a successfull person! 😍😍          Thanks for play!<h2>';
+            }
+            if (n > 16 && n <= 17) {
+                document.getElementById("head").innerHTML = '<h2>keep working! your hard will pays off.. 😍😍         Thanks for play!<h2>';
+            }
+            if (n == 18) {
+                document.getElementById("head").innerHTML = '<h2>you are best possible version of ur self! 😍😍        Thanks for play!<h2>';
+            }
+            if (n == 19) {
+                document.getElementById("head").innerHTML = '<h2>one day! your crush will propose you ,in front of everyone. 😍😍     Thanks for play!<h2>';
+            }
+            if (n == 20) {
+                document.getElementById("head").innerHTML = '<h2>you will enjoy your  love-life with your crush! 😍😍        Thanks for play!<h2>';
+            }
+
+
+        }
+    
+    } 
+
+
+
+    </script>
+</body>
+
+</html>
